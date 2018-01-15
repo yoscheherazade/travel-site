@@ -673,6 +673,11 @@ a {
         &__medium-4--larger {
             width: 37%;
         }
+
+        &__medium-6 {
+            float: left;
+            width: 50%;
+        }
     
         &__medium-8 {
             float: left;
@@ -685,14 +690,22 @@ a {
     }
 }
 
-.rowgutters {
+.row--gutters {
         /*removes right padding on text column*/
         margin-right: -65px;
         overflow: hidden;
     }
 
+.row--gutters-large {
+        margin-right: -100px;
+    }
+
 .row--gutters > div {
         padding-right: 65px;
+    }
+
+.row--gutters-large > div {
+        padding-right: 100px;
     }
 
 .row__b-margin-until-medium {
@@ -700,8 +713,9 @@ a {
     }
 
 .generic-content-container p {
+        font-weight: 300;
         line-height: 1.65;
-        margin: 1.8rem 0;
+        margin: 0 0 1.8rem 0;
 
         @mixin atSmall {
             font-size: 1.125rem;
